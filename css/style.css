@@ -492,6 +492,8 @@ button {
   color: var(--main-blue);
 }
 
+.sign-icon { fill: red;}
+
 /* Присоеденяйтесь */
 
 .join-us {
