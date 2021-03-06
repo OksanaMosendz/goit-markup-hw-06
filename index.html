@@ -43,7 +43,7 @@
      <!--Герой-->
         <section class="hero">
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-           <button data-modal-open class="hero-btn" > Заказать услугу</button>
+           <button data-modal-open class="btn" > Заказать услугу</button>
         </section>
      <!--Преимущества-->
         <section class="features">
@@ -347,7 +347,7 @@
 
             <!-- Присоединяйтесь -->
             <div class="join-us">
-                <h3 class="join-title">присоединяйтесь</h3>
+                <p class="join-title">присоединяйтесь</p>
                 <ul class="join social-links">
                     <li><a href=""> 
                             <svg class="link-icon" width="20px" height="20px">
@@ -381,11 +381,11 @@
 
             <!-- Подпишитесь на рассылку -->
             <div class="sign">
+                <p class="sign-title">Подпишитесь на рассылку</p>
                 <form>
-                    <p>Подпишитесь на рассылку</p>
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail"/>
-                    <button class="sign-btn" type="submit">Подписаться 
+                    <button class="btn" type="submit">Подписаться
                         <svg class="sign-icon" width="24px" height="24px">
                         <use href="./images/icons.svg#sign"></use> 
                     </svg></button>
@@ -398,7 +398,7 @@
     <!-- Заказать услугу-модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close>
+            <button data-modal-close class="modal-close-btn">
                 <svg width="11px" height="11px" >
                 <use href="./images/icons.svg#close"></use>    
                 </svg>
@@ -419,7 +419,7 @@
                 <label for="comment">Комментарий</label>
                 <input type="text" name="mail" id="comment"/>
             
-                <button type="submit">Отправить</button>
+                <button class="btn" type="submit">Отправить</button>
             </form>
         </div>
     </div>
