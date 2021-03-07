@@ -814,3 +814,32 @@ label.agree a {
   display: flex;
   margin-bottom: 30px;
 }
+
+.agree-check input {
+  position: relative;
+  opacity: 0;
+}
+
+.agree-check svg {
+  position: absolute;
+  border: var(--title-grey) 2px solid;
+  border-radius: 20%;
+}
+
+.agree-check use {
+  opacity: 0;
+}
+
+.agree-check use:hover {
+  opacity: 1;
+  fill: red;
+}
+
+.agree-check svg:hover {
+  border: none;
+  background-color: var(--main-blue);
+}
+
+input.agree:checked {
+  
+}
