@@ -408,13 +408,28 @@
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 
                 <label for="name">Имя</label>
-                <input type="name" name="name" id="name"> 
+                <div class="input-wrapper">
+                    <input type="name" name="name" id="name"> 
+                    <svg class="modal-icon" width="18px" height="18px"> 
+                        <use href="./images/icons.svg#person"></use>
+                    </svg>
+                </div>
 
                 <label for="tel">Телефон</label>
-                <input type="tel"  name="tel" id="tel">
+                <div class="input-wrapper">
+                    <input type="tel"  name="tel" id="tel">
+                    <svg class="modal-icon" width="18px" height="18px"> 
+                        <use href="./images/icons.svg#phone-modal"></use>
+                    </svg>
+                </div>
 
                 <label for="sign-mail">Почта</label>
-                <input type="email" name="mail" id="sign-mail"/>
+                <div class="input-wrapper">
+                    <input type="email" name="mail" id="sign-mail"/>
+                    <svg class="modal-icon" width="18px" height="18px"> 
+                        <use href="./images/icons.svg#mail-modal"></use>
+                    </svg>
+                </div>
 
                 <label for="comment">Комментарий</label>
                 <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
