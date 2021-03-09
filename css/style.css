@@ -105,16 +105,15 @@ button {
 .header-contacts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.hd-page {
-  position: relative;
-  margin-left: 50px;
+.hd-page, .hd-contact-item {
+  margin-right: 50px;
 }
 
-.hd-page:first-child {
-  margin-left: 93px;
+.hd-page:last-child,
+.hd-contact-item:last-child { 
+  margin-right: 0;
 }
 
 .hd-page a {
@@ -155,6 +154,9 @@ button {
   border-radius: 2px;
 }
 
+.header-contacts {
+  margin-left: auto;}
+
 .header-contacts a {
   display: flex;
    
@@ -164,15 +166,6 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.hd-contact {
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-.hd-contact:last-child {
-  margin-right: 0;
 }
 
 .header-contacts a:hover,
@@ -197,6 +190,9 @@ button {
   font-size: 26px;
   line-height: 1.19;
 }  
+
+.header-logo {
+  margin-right: 93px;}
 
 .header-logo span {
   color: #000000;
@@ -504,7 +500,6 @@ button {
 
 .join-us {
   margin-left: 70px;
-  margin-right: 93px;
 } 
 
 .join-title, .sign-title {
@@ -520,6 +515,10 @@ button {
 }
 
 /* Подписывайтесь на рассылку */
+
+.sign {
+  margin-left: 93px;
+}
 
 .sign form {
   display: flex;
@@ -710,11 +709,11 @@ button {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .backdrop.is-hidden .modal { 
-  transform: translate(-50%, -50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0.1); 
 }
 
 .modal {
@@ -762,10 +761,20 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white);
+  
 }
 
-.modal label { 
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+  fill: var(--main-blue);
+}
+
+
+.modal label { 
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -780,8 +789,7 @@ button {
 .modal input, textarea {
   padding: 11px;
   padding-left: 40px;
-  margin-bottom: 10px;
-
+  
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
  
@@ -809,6 +817,7 @@ textarea::placeholder {
 
 .input-wrapper {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .input-wrapper input {
